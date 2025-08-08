@@ -1,13 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import Comment from "./Component/Comment";
 import Todo from "./Component/Todo";
 import Post from "./Component/Post";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <main role="main" className="container mt-5 pt-5">
           <div className="starter-template mb-4">
@@ -34,7 +34,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

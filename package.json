@@ -1,4 +1,5 @@
 {
+  "homepage": "https://prithivianand.github.io/Fetchdata/",
   "name": "fetch-data",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
